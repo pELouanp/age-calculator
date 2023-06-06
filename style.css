@@ -1,0 +1,125 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 94%);
+}
+main {
+  background: white;
+  padding: 50px;
+  border-radius: 25px;
+  border-bottom-right-radius: 200px;
+  width: 630px;
+  margin: 120px auto;
+}
+img {
+  background: hsl(259, 100%, 65%);
+  padding: 25px;
+  border-radius: 50%;
+  float: right;
+  margin-top: -50px;
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: rgb(128, 128, 128);
+}
+input {
+  padding: 20px;
+  width: 85px;
+  border-radius: 5px;
+  border: 1px rgb(128, 128, 128, 0.3) solid;
+  margin: 7px 0 0 20px;
+  font-size: 27px;
+  font-weight: 800;
+}
+#hrDesk {
+  margin: 50px 0 0 20px;
+  opacity: 0.3;
+}
+#hrMobile {
+  display: none;
+}
+::placeholder {
+  font-size: 25px;
+  color: rgb(128, 128, 128, 0.9);
+}
+.result {
+  display: flex;
+  flex-direction: row;
+}
+.inf {
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 90px;
+  margin-top: 60px;
+}
+.day {
+  margin-left: 20px;
+}
+.month {
+  margin-left: 117px;
+}
+.year {
+  margin-left: 90px;
+}
+.error1,
+.error2,
+.error3,
+.error4 {
+  font-size: 8px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+.error4 {
+  margin-left: 20px;
+}
+.error1 {
+  margin-left: 20px;
+}
+.error2,
+.error3 {
+  margin-left: 65px;
+}
+.visibleInput {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.visibleLabel {
+  color: hsl(0, 100%, 67%);
+}
+
+input:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: black;
+}
+img:active {
+  transform: scale(0.95);
+}
+@media screen and (max-width: 425px) {
+  main {
+    width: 450px;
+    padding: 50px 20px;
+  }
+  img {
+    margin: -40px 170px 0 0;
+  }
+  .inf {
+    padding-top: 40px;
+  }
+  #hrDesk {
+    display: none;
+  }
+  #hrMobile {
+    display: block;
+    margin-top: 20px;
+  }
+}
